@@ -1,4 +1,7 @@
 import './App.css'
+import sebLogo from "/snow_seb.jpg"
+import project1_img from "/temp.jpg"
+
 
 function App() {
   return (
@@ -25,7 +28,7 @@ function App() {
 
       
         <div class = "about">
-            <img src="snow_seb.jpg" id="profile_pic" alt="About Me Image"></img>
+            <img src={sebLogo} id="profile_pic" alt="About Me Image"></img>
             <p>khjdsdkfjhfdskjdfshkjdfshsfsfjkjsfjkhfskjdshk hjkshkfjsvbfsljvbsdjfbwljbdfsljfbljfbsdljfbsdlfbsdlfbklopment as a Web Developerfklfnsklnflksnflksnfklnsflknf </p>
         </div>
 
@@ -70,11 +73,11 @@ function App() {
           <h1>Projects and Research</h1>
           <div className="projects-grid">
             <div className="project">
-              <img src="temp.jpg" alt="Project 1" />
+              <img src={project1_img} alt="Project 1" />
               <p>Project 1 description goes here.</p>
             </div>
             <div className="project">
-              <img src="temp.jpg" alt="Project 2" />
+              <img src={project1_img} alt="Project 2" />
               <p>Project 2 description goes here.</p>
             </div>
           </div>
