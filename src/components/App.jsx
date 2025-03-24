@@ -19,7 +19,7 @@ function App() {
         </section>
       </header>
 
-      <section class="subheader">
+      <section className ="subheader">
         <h3>Los Angeles, California</h3>
         <h3>Loyola Marymount University</h3>
       </section>
@@ -27,12 +27,12 @@ function App() {
       <main>
 
       
-        <div class = "about">
+        <div className = "about">
             <img src={sebLogo} id="profile_pic" alt="About Me Image"></img>
             <p>khjdsdkfjhfdskjdfshkjdfshsfsfjkjsfjkhfskjdshk hjkshkfjsvbfsljvbsdjfbwljbdfsljfbljfbsdljfbsdlfbsdlfbklopment as a Web Developerfklfnsklnflksnflksnfklnsflknf </p>
         </div>
 
-        <div class = "education">
+        <div className = "education">
         <h1>Education</h1>
         <h3>BA Computer Science</h3>
         <p><strong>Minor:</strong> Data Science and Statistics</p>
@@ -43,7 +43,7 @@ function App() {
         </div>
 
 
-        <div class = "contact">
+        <div className = "contact">
             <h1> Contact </h1>
             <p> Pesonal: 310-920-6242 </p>
             <p> Personal: langes01234@gmail.com </p>
