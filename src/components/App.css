@@ -1,6 +1,6 @@
 @font-face {
   font-family: Title_Font;
-  src: url('/Grotesk.ttf');
+  src: url('personal_website_seb/public/Grotesk.ttf');
 }
 
 header {
@@ -59,12 +59,6 @@ main {
   max-height: 250px;
 }
 
-.projects{
-  padding: 20px;
-  border-radius: 10px;
-  background-color: greenyellow;
-  grid-column: 1/-1;
-}
 
 .education{
   padding: 20px;
@@ -111,6 +105,7 @@ main {
   padding: 20px;
   border-radius: 10px;
   background-color: greenyellow;
+  grid-column: 1/-1;
 }
 
 .projects-grid {
