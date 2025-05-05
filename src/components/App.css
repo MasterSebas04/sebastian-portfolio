@@ -1,17 +1,12 @@
-@font-face {
-  font-family: Title_Font;
-  src: url('personal_website_seb/public/Grotesk.ttf');
-}
-
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: white;
   color: black;
-  font-family: "Title_Font", sans-serif;
   border-bottom: 1.5px solid black;
   font-size: 15pt;
+  font-family: "robot", sans-serif;
 }
 
 h2{
@@ -24,7 +19,7 @@ h2{
 }
 
 .subheader{
-  font-family: "Title_Font", sans-serif;
+  font-family: "robot", sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
