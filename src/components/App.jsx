@@ -1,6 +1,9 @@
 import './App.css'
 import sebLogo from "/snow_seb.jpg"
-import project1_img from "/temp.jpg"
+import HeaderButtons from './buttons'
+import Project_Boxes from './project_boxes'
+
+import { Outlet, Link } from "react-router-dom";
 
 
 function App() {
@@ -12,9 +15,7 @@ function App() {
         </section>
         <section id="rightheadersection">
           <section id="info">
-            <h2>Résumé</h2>
-            <h2>Github</h2>
-            <h2>Linkedin</h2>
+            <HeaderButtons /> 
           </section>
         </section>
       </header>
@@ -35,7 +36,7 @@ function App() {
         <div className = "education">
         <h1>Education</h1>
         <h3>BA Computer Science</h3>
-        <p><strong>Minor:</strong> Data Science and Statistics</p>
+        <h3>Data Science and Statistic </h3>
         <p><strong>Institution:</strong> Loyola Marymount University</p>
         <p><strong>Duration:</strong> 2023 – 2027</p>
 
@@ -68,20 +69,7 @@ function App() {
           ))}
         </div>
 
-
-        <div className="projects">
-          <h1>Projects and Research</h1>
-          <div className="projects-grid">
-            <div className="project">
-              <img src={project1_img} alt="Project 1" />
-              <p>Project 1 description goes here.</p>
-            </div>
-            <div className="project">
-              <img src={project1_img} alt="Project 2" />
-              <p>Project 2 description goes here.</p>
-            </div>
-          </div>
-        </div>
+        <Project_Boxes /> 
 
 
 
