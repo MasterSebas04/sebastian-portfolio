@@ -38,22 +38,59 @@ function App() {
 
         {/* Skills Section */}
         <section className="skills-section">
-          <h2 className="section-title">Technical Skills</h2>
-          <div className="skills-grid">
+          <h2 className="section-title">Software Engineering Skills</h2>
+          <div className="chart-container">
             {[
-              { skill: 'Python', level: 80 },
-              { skill: 'JavaScript', level: 85 },
-              { skill: 'Git', level: 75 },
-              { skill: 'Java', level: 60 },
-              { skill: 'SQL', level: 50 },
-            ].map((item) => (
-              <div key={item.skill} className="skill-item">
-                <div className="skill-header">
-                  <span className="skill-name">{item.skill}</span>
-                  <span className="skill-percentage">{item.level}%</span>
+              { skill: 'Python', level: 90, color: '#2563eb' },
+              { skill: 'JavaScript', level: 90, color: '#3b82f6' },
+              { skill: 'Git', level: 80, color: '#10b981' },
+              { skill: 'Java', level: 50, color: '#f59e0b' },
+              { skill: 'Docker', level: 50, color: '#8b5cf6' },
+            ].map((item, index) => (
+              <div key={item.skill} className="bar-item">
+                <div className="bar-label">{item.skill}</div>
+                <div className="bar-wrapper">
+                  <div 
+                    className="bar-fill" 
+                    style={{ 
+                      width: `${item.level}%`,
+                      backgroundColor: item.color,
+                      animationDelay: `${index * 0.1}s`
+                    }}
+                  ></div>
+                  <div className="bar-value">{item.level}%</div>
                 </div>
-                <div className="skill-bar">
-                  <div className="skill-progress" style={{ width: `${item.level}%` }}></div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Data Science Skills Section */}
+        <section className="data-science-section">
+          <h2 className="section-title">Data Science & Analytics</h2>
+          <div className="chart-container">
+            {[
+              { skill: 'Pandas', level: 85, color: '#e74c3c' },
+              { skill: 'NumPy', level: 80, color: '#3498db' },
+              { skill: 'SQL', level: 80, color: '#2ecc71' },
+              { skill: 'Matplotlib', level: 75, color: '#f39c12' },
+              { skill: 'Seaborn', level: 70, color: '#9b59b6' },
+              { skill: 'Jupyter', level: 85, color: '#1abc9c' },
+              { skill: 'TensorFlow', level: 60, color: '#e67e22' },
+              { skill: 'R', level: 70, color: '#34495e' },
+            ].map((item, index) => (
+              <div key={item.skill} className="bar-item">
+                <div className="bar-label">{item.skill}</div>
+                <div className="bar-wrapper">
+                  <div 
+                    className="bar-fill" 
+                    style={{ 
+                      width: `${item.level}%`,
+                      backgroundColor: item.color,
+                      animationDelay: `${index * 0.1}s`
+                    }}
+                  ></div>
+                  <div className="bar-value">{item.level}%</div>
                 </div>
               </div>
             ))}
@@ -92,6 +129,28 @@ function App() {
             </div>
           </section>
         </div>
+
+        {/* Location Map */}
+        <section className="map-section">
+          <h2 className="section-title">Location</h2>
+          <div className="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.1234567890123!2d-118.4168!3d33.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7c8c8c8c8c8%3A0x1234567890abcdef!2sLoyola%20Marymount%20University!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+              width="100%"
+              height="300"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Loyola Marymount University Location"
+            ></iframe>
+            <div className="map-info">
+              <h3>Loyola Marymount University</h3>
+              <p>Los Angeles, California</p>
+              <p>Where I'm pursuing my Computer Science degree</p>
+            </div>
+          </div>
+        </section>
 
         {/* Projects Section */}
         <Project_Boxes />

@@ -279,6 +279,92 @@ body {
   width: 80%;
 }
 
+/* Data Science Section */
+.data-science-section {
+  margin-bottom: 4rem;
+}
+
+.chart-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.bar-item {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bar-label {
+  min-width: 120px;
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 1rem;
+}
+
+.bar-wrapper {
+  flex: 1;
+  position: relative;
+  height: 30px;
+  background-color: #f3f4f6;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 15px;
+  position: relative;
+  animation: fillBar 1.5s ease-out forwards;
+  opacity: 0;
+}
+
+.bar-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+  animation: shimmer 8s infinite;
+}
+
+.bar-value {
+  position: absolute;
+  right: 10px;
+  font-weight: 600;
+  color: #374151;
+  font-size: 0.9rem;
+  z-index: 2;
+}
+
+@keyframes fillBar {
+  from {
+    width: 0% !important;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 /* Projects Section */
 .projects-section {
   margin-bottom: 4rem;
@@ -409,6 +495,25 @@ body {
   .nav-buttons {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .chart-container {
+    padding: 1.5rem;
+  }
+
+  .bar-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .bar-label {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .bar-wrapper {
+    width: 100%;
   }
 }
 
