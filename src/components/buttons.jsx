@@ -3,11 +3,22 @@ export default function HeaderButtons() {
         window.open(url, "_blank");
     };
 
+    const handleResumeClick = () => {
+        // You can add resume download functionality here
+        console.log("Resume clicked");
+    };
+
     return (
-      <>
-        <button>Résumé</button>
-        <button onClick={() => handleClick('https://github.com/MasterSebas04')}>Github</button>
-        <button onClick={() => handleClick('https://www.linkedin.com/in/sebastian-vahe-lange/')}>Linkedin</button>
-      </>
+      <div className="nav-buttons">
+        <button className="nav-button" onClick={handleResumeClick}>
+          Résumé
+        </button>
+        <button className="nav-button" onClick={() => handleClick('https://github.com/MasterSebas04')}>
+          GitHub
+        </button>
+        <button className="nav-button" onClick={() => handleClick('https://www.linkedin.com/in/sebastian-vahe-lange/')}>
+          LinkedIn
+        </button>
+      </div>
     );
   }
