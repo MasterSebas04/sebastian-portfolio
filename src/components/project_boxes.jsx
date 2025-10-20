@@ -1,23 +1,26 @@
-import project1_img from "/temp.jpg";
+import project1_img from "/logo_bg.png";
+import project2_img from "/healthcare-img.jpg";
 import { Link } from "react-router-dom";
 
 export default function Project_Boxes() {
   const projects = [
     {
       id: 1,
-      title: "Web Development Project",
-      description: "A modern web application built with React and modern CSS. Features responsive design and interactive components.",
+      title: "Kubishi Scholar",
+      description: "Designed a scalable platform aggregating and analyzing academic datasets. Implemented data pipelines with Python and semantic search using Pinecone, with MySQL database management and REST API development.",
       image: project1_img,
-      technologies: ["React", "CSS3", "JavaScript"],
-      status: "Completed"
+      technologies: ["Python", "MySQL", "REST APIs", "Pinecone", "CI/CD"],
+      status: "In Progress",
+      timeframe: "Jan 2025 – Present"
     },
     {
       id: 2,
-      title: "Data Analysis Project",
-      description: "Statistical analysis project using Python and SQL. Focused on data visualization and insights generation.",
-      image: project1_img,
-      technologies: ["Python", "SQL", "Pandas"],
-      status: "In Progress"
+      title: "Clinical Outcomes Analytics",
+      description: "Medical data analysis using anonymized patient records with WHO's ICD-11-CM codes. Explored disease trends, treatment patterns, and created data visualizations for clinical insights.",
+      image: project2_img,
+      technologies: ["Python", "SQL", "Data Visualization", "REST APIs", "ICD-11"],
+      status: "In Progress",
+      timeframe: "July 2025 – Present"
     }
   ];
 

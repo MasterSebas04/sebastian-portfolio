@@ -97,6 +97,40 @@ function App() {
           </div>
         </section>
 
+        {/* Work Experience Section */}
+        <section className="work-section">
+          <h2 className="section-title">Work Experience</h2>
+          <div className="work-grid">
+            <div className="work-card">
+              <div className="work-header">
+                <h3 className="work-title">Crimson Consulting Group</h3>
+                <span className="work-period">Jan 2025 – Present</span>
+              </div>
+              <p className="work-company">Loyola Marymount University</p>
+              <ul className="work-achievements">
+                <li>Managed end-to-end product lifecycle within 1-2 month timeframe for client projects under NDA</li>
+                <li>Applied data science techniques including BI modeling and predictive analysis</li>
+                <li>Coordinated assignments, timelines, and communication across small team</li>
+                <li>Built organizational and problem-solving skills applicable to enterprise IT environments</li>
+              </ul>
+            </div>
+
+            <div className="work-card">
+              <div className="work-header">
+                <h3 className="work-title">Computer Science Lab Tutor</h3>
+                <span className="work-period">Sep 2024 – Present</span>
+              </div>
+              <p className="work-company">Loyola Marymount University</p>
+              <ul className="work-achievements">
+                <li>Guided students through programming, statistics, and data science assignments</li>
+                <li>Reviewed and debugged student code, emphasizing software testing and accuracy</li>
+                <li>Collaborated with faculty to design scalable instruction frameworks</li>
+                <li>Created reusable study materials and automated exercises for efficiency</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
         {/* Education & Contact Grid */}
         <div className="info-grid">
           <section className="education-card">
