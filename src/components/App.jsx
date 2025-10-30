@@ -1,7 +1,8 @@
 import './App.css'
-import sebLogo from "/snow_seb.jpg"
 import HeaderButtons from './buttons'
 import Project_Boxes from './project_boxes'
+import PineconeViewer from './PineconeViewer'
+import DepthImage from './DepthImage'
 
 import { Outlet, Link } from "react-router-dom";
 
@@ -31,10 +32,20 @@ function App() {
               </p>
             </div>
             <div className="hero-image">
-              <img src={sebLogo} alt="Sebastian Lange" className="profile-image" />
+              <DepthImage
+                color={'/new_seb.jpg'}
+                depth={'/seb_depthmap/new_seb_depth.png'}
+                strength={0.22}
+                scale={1.15}
+              />
             </div>
           </div>
         </section>
+
+        {/* Small 3D Pinecone (Three.js) */}
+        {/* <section className="pinecone-3d" style={{ display: 'flex', justifyContent: 'center', marginBottom: '2rem' }}>
+          <PineconeViewer />
+        </section> */}
 
         {/* Skills Section */}
         <section className="skills-section">

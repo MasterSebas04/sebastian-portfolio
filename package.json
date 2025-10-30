@@ -12,10 +12,13 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@react-three/drei": "^10.7.6",
+    "@react-three/fiber": "^9.4.0",
     "@tailwindcss/vite": "^4.0.17",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-router-dom": "^6.28.0"
+    "react-router-dom": "^6.28.0",
+    "three": "^0.170.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
