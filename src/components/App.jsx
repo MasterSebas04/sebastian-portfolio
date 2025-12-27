@@ -3,6 +3,7 @@ import HeaderButtons from './buttons'
 import Project_Boxes from './project_boxes'
 import PineconeViewer from './PineconeViewer'
 import DepthImage from './DepthImage'
+import ThreeModel from './threeModel'
 
 import { Outlet, Link } from "react-router-dom";
 
@@ -11,7 +12,10 @@ function App() {
     <div className="app">
       <header className="header">
         <div className="header-content">
-          <h1 className="logo">Sebastian Lange</h1>
+          <div className="logo-container">
+            <h1 className="logo">Sebastian Lange</h1>
+            <ThreeModel />
+          </div>
           <nav className="nav">
             <HeaderButtons /> 
           </nav>
@@ -41,11 +45,6 @@ function App() {
             </div>
           </div>
         </section>
-
-        {/* Small 3D Pinecone (Three.js) */}
-        {/* <section className="pinecone-3d" style={{ display: 'flex', justifyContent: 'center', marginBottom: '2rem' }}>
-          <PineconeViewer />
-        </section> */}
 
         {/* Skills Section */}
         <section className="skills-section">
@@ -178,7 +177,6 @@ function App() {
 
         {/* Projects Section */}
         <Project_Boxes />
-
         {/* Location Map */}
         <section className="map-section">
           <h2 className="section-title">Location</h2>
